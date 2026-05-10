@@ -1,5 +1,5 @@
 /* Fuentes usadas*/
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* estilos de elementos*/
 
 * {
@@ -45,7 +45,6 @@ p, li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
     font-weight: thin;
-    color: rgb(61, 60, 60);
     }
 i {
     font-family: Arial, Helvetica, sans-serif;
@@ -57,13 +56,6 @@ i {
 
 /*ESTILO DE HEADER*/
 
-#titularSuperior {
-    position: absolute; /* Clave: posiciona el botón respecto al fondoHeader*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24pt;
-    font-style: italic;
-    font-weight: thin;
-}
 
 .header-video {
     position: absolute;
@@ -71,26 +63,25 @@ i {
     top: -50px;
     width: 100%; /*La imagen ocupa todo el ancho*/
     height: auto;
-    filter: blur(2px);
+    filter: blur(2px) grayscale(100%);;
     transition: filter 0.3s ease;
 }
 
 #fondoHeader {
     width: 100%;
     height: 400px;
-    background-color: grey;
+    /*background-color: grey;*/
     overflow: hidden; /*¡Clave! Oculta lo que sale del div*/
     position: relative; /*Opcional: para posicionar la imagen dentro*/
 }
 
-#fotoHeader {
+#logoHeader {
     position: absolute;
-    top: -200px;
-    width: 100%;
+    top: 10px;
+    left: 10px;
+    width: 100px;
     height: auto;
-    filter: sepia(100%) hue-rotate(200deg);
 }
-
 
 #headerButton {
     position: absolute; /* Clave: posiciona el botón respecto al fondoHeader
@@ -102,7 +93,7 @@ i {
     
     /* Estilos del botón */
     padding: 15px 70px;
-    background-color: red;
+    background-color: #4400fd;
     color: white;
     border: none;
     cursor: pointer;
@@ -112,7 +103,7 @@ i {
 
   /*ESTILOS DEL MENÚ*/
 #menuPrincipal {
-    background-color: rgb(255, 0, 0);
+    background-color: #4400fd;
     padding: 20px;
     display: flex;
     justify-content: center; /* Centrado horizontal */
@@ -126,10 +117,87 @@ i {
 
 
 /* PREGUNTAR COMO QUITAR LA LINEA BASE DE LOS ITEM*/
-#menuPrincipal > a {
+.btMenuPrincipal {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     font-weight: bold;
     color: rgb(255, 255, 255);
     padding: 10px;
     }
+
+/*  SECCION 1 */
+
+#seccion1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+    justify-content: center;
+    }
+
+/* CATALOGO */
+
+.catalogo {
+    position: absolute;
+    display: flex;
+    gap: 27px;
+    justify-content: center;
+    width: 1200px;
+    height: 95%;
+    top: 5%;
+    background-color: rgb(127, 140, 255);
+    }
+
+/* ITEM CATALOGO */
+
+.itemCatalogo {
+    overflow: hidden;
+    width: 280px;
+    border-radius: 8px;
+    background-color: rgb(233, 229, 11);
+    }
+
+.itemImagen {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    }
+
+.itemImg {
+    position: relative;
+    height: 100%;
+    left: -20%;
+    }
+
+.itemContenido {
+    padding: 20px;
+}
+
+.itemTitulo {
+    margin: 0 0 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+    background-color: rgb(255, 0, 21);
+}
+
+.itemDescripcion {
+    font-family: "Roboto", sans-serif;
+    font-size: 11pt;
+    color: grey;
+    background-color: blue;
+}
+
+.itemLink {
+    font-family: "Roboto", sans-serif;
+    font-size: 9pt;
+    color: blue;
+}
+
+.itemFlecha {
+    margin-top: 10px;
+    width: 10px;
+    height: auto;
+}
