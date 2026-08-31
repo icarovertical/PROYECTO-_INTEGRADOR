@@ -42,7 +42,7 @@ public class CuentaBancaria {
             saldo -= cantidad;
         }
     }
-//Prueba de GitHUB 5
+//Prueba de GitHUB 6
     public void mostrarDetalles() {
         System.out.println("Titular: [" + titular + "] | Saldo: [" + saldo + "]");
     }
