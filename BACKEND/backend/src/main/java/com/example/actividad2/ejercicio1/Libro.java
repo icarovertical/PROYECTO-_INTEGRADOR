@@ -27,7 +27,7 @@ public class Libro {
         this.autor = "Anonimo";
         this.paginas = 0;
     }
-// Prueba 7
+// Ultimos cambios
     public void mostrarDetalles() {
         System.out.println("Libro: [" + titulo + "] | Autor: [" + autor + "] | Paginas: [" + paginas + "]");
     }
