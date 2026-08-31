@@ -52,7 +52,7 @@ public class Estudiante {
     public boolean haAprobado() {
         return promedio >= 3.0;
     }
-// Ultimos cambios 8
+// Ultimos cambios 9
     public void mostrarInfo() {
         System.out.println("Nombre: " + nombre + "edad: " + edad + "Promedio: " + promedio);
         if (haAprobado()) {
